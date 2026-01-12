@@ -1,0 +1,39 @@
+.new-ticket-container {
+  max-width: 500px;
+  margin: 80px auto;
+}
+
+.new-ticket-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.new-ticket-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.new-ticket-container input,
+.new-ticket-container textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+.new-ticket-container textarea {
+  min-height: 120px;
+}
+
+.new-ticket-container button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}

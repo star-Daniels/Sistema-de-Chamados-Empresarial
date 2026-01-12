@@ -1,0 +1,159 @@
+.dashboard-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+header h2 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+header div {
+  display: flex;
+  gap: 12px;
+}
+
+header a {
+  text-decoration: none;
+  background: #4f46e5;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+header a:hover {
+  background: #4338ca;
+}
+
+header button {
+  background: #640000;
+  border: none;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+header button:hover {
+  background: #070000;
+}
+
+.center {
+  text-align: center;
+  margin-top: 40px;
+  color: #555;
+}
+
+
+
+.ticket-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ticket-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+}
+
+.ticket-card p {
+  color: #555;
+  line-height: 1.4;
+}
+
+
+.status {
+  width: fit-content;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status.aberto {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status.andamento {
+  background: #fef9c3;
+  color: #854d0e;
+}
+
+.status.fechado {
+  background: #fee2e2;
+  color: #2b0000;
+}
+
+
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.actions select {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.actions select:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+.actions .delete {
+  background: #530000;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.actions .delete:hover {
+  background: #dc2626;
+}
+
+
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+}

@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Dashboard from "../pages/Dashboard";
+import NewTicket from "../pages/NewTicket";
 import PrivateRoute from "./PrivateRoute";
 
 export default function AppRoutes() {
@@ -11,6 +12,8 @@ export default function AppRoutes() {
             <Route path="/" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
+            <Route path="/new-ticket" element={<PrivateRoute><NewTicket /></PrivateRoute>} />
+
         </Routes>
         </BrowserRouter>
     )
