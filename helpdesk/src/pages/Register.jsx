@@ -1,4 +1,4 @@
-import "./register.css";
+
 import { useState } from "react";
 import { useAuth } from "../contexts/AuthContext";
 import { useNavigate, Link } from "react-router-dom";
@@ -30,6 +30,10 @@ export default function Register() {
 
     if (password !== confirmPassword) {
       setError("As senhas não coincidem");
+      return;
+    }
+    if (password.length < 8) {
+      setError("A senha deve ter pelo menos 8 caracteres");
       return;
     }
 
