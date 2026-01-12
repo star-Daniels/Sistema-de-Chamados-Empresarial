@@ -64,47 +64,6 @@ src/
 
 ---
 
-## ⚙️ Como rodar o projeto
-
-### 1. Clone o repositório
-
-git clone https://github.com/seu-usuario/seu-repositorio.git
-
-2. Entre na pasta
-cd seu-repositorio
-
-3. Instale as dependências
-npm install
-
-4. Configure o Firebase
-
-Crie o arquivo:
-
-src/firebase/firebaseConfig.js
-
-
-E adicione:
-
-import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
-import { getFirestore } from "firebase/firestore";
-
-const firebaseConfig = {
-  apiKey: "SUA_API_KEY",
-  authDomain: "SEU_AUTH_DOMAIN",
-  projectId: "SEU_PROJECT_ID",
-  storageBucket: "SEU_STORAGE",
-  messagingSenderId: "SEU_MESSAGING",
-  appId: "SEU_APP_ID",
-};
-
-const app = initializeApp(firebaseConfig);
-
-export const auth = getAuth(app);
-export const db = getFirestore(app);
-
-5. Rodar o projeto
-npm run dev
 
 🎯 Objetivo do projeto
 
