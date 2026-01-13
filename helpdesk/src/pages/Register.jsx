@@ -1,4 +1,5 @@
 
+import "./style/Register.css";
 import { useState } from "react";
 import { useAuth } from "../contexts/AuthContext";
 import { useNavigate, Link } from "react-router-dom";
@@ -54,11 +55,13 @@ export default function Register() {
 
   return (
     <div className="register-container">
-      <h2>Cadastro</h2>
-
-      {error && <p className="error">{error}</p>}
+      
 
       <form onSubmit={handleSubmit}>
+        <h2 >Cadastro</h2>
+
+      {error && <p className="error">{error}</p>}
+        
         <input placeholder="Nome" value={name} onChange={(e) => setName(e.target.value)} />
         <input placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
 
