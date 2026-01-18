@@ -1,4 +1,4 @@
-# 📌 Sistema de Chamados – React + Firebase
+#  Sistema de Chamados – React + Firebase
 
 Sistema web de chamados (help desk) desenvolvido em **React** com **Firebase**, permitindo que usuários se cadastrem, façam login e abram chamados de suporte.
 
@@ -6,36 +6,36 @@ Projeto focado em aprendizado prático de front-end moderno, autenticação, ban
 
 ---
 
-## 🚀 Tecnologias utilizadas
+##  Tecnologias utilizadas
 
-- ⚛️ React (Vite)
-- 🔥 Firebase  
+-  React (Vite)
+-  Firebase  
   - Authentication  
   - Firestore Database  
-- 🌐 React Router DOM  
-- 🎨 CSS puro  
-- 🧩 Lucide-react (ícones)
+-  React Router DOM  
+-  CSS puro  
+-  Lucide-react (ícones)
 
 ---
 
-## ✨ Funcionalidades
+##  Funcionalidades
 
-- ✅ Cadastro de usuário  
-- ✅ Login e logout  
-- ✅ Autenticação com Firebase  
-- ✅ Proteção de rotas (Private Routes)  
-- ✅ Cadastro com:  
+-  Cadastro de usuário  
+-  Login e logout  
+-  Autenticação com Firebase  
+-  Proteção de rotas (Private Routes)  
+-  Cadastro com:  
   - Nome  
   - Email  
   - Senha  
   - Confirmação de senha  
-  - Visualização de senha (👁️)  
-- ✅ Salvamento de usuários no Firestore  
-- ⏳ Sistema de chamados (em desenvolvimento)
+  - Visualização de senha
+-  Salvamento de usuários no Firestore  
+-  Sistema de chamados (em desenvolvimento)
 
 ---
 
-## 🧠 Conceitos aplicados
+##  Conceitos aplicados
 
 - Context API (AuthContext)  
 - Rotas privadas  
@@ -46,26 +46,38 @@ Projeto focado em aprendizado prático de front-end moderno, autenticação, ban
 
 ---
 
-## 📁 Estrutura básica do projeto
+## Estrutura básica do projeto
 
 src/
+
 ├── contexts/
+
 │ └── AuthContext.jsx
+
 ├── firebase/
+
 │ └── firebaseConfig.js
+
 ├── pages/
+
 │ ├── Login/
+
 │ ├── Register/
+
 │ └── Dashboard/
+
 ├── routes/
+
 │ ├── AppRoutes.jsx
+
 │ └── PrivateRoute.jsx
+
 
 
 ---
 
 
-🎯 Objetivo do projeto
+ Objetivo do projeto
 
 Projeto desenvolvido para fins de estudo, com foco em:
 
@@ -76,7 +88,7 @@ Integração com Firebase
 Construção de sistemas reais
 
 
-👨‍💻 Autor
+ Autor
 
 Daniel Francisco
 Formado em Desenvolvimento de Sistemas – SENAI
