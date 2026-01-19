@@ -69,7 +69,6 @@ src/
 ├── routes/
 
 │ ├── AppRoutes.jsx
-
 │ └── PrivateRoute.jsx
 
 
